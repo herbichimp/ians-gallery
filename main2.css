@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-image: linear-gradient(260deg, #7e3333 0%, #661a1a 100%);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  /* background: rgba(0, 0, 0, 0.2); */
+  /*padding: 5px 5px; */
+  display: inline-block;
+  /* width: 100%; */
+  text-align: center;
+  transition: all 0.5s;
+  /* border: crimson solid 2px; */
+}
+
+/* .infoNav:hover {
+  background: rgba(0, 0, 0, 0.4);
+} */
+
+.container {
+  max-width: auto;
+  /* margin: 0 auto; */
+  /* padding: 5px; */
+}
+
+.logo img {
+  vertical-align: bottom;
+  width: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  /* border-radius: 100%; */
+}
+
+/* flexbox stuff */
+
+.logo {
+  background: firebrick;
+}
+
+.infoNav {
+  display: flex; /* create nested flex container */
+  justify-content: center; /* center text horizontally */
+  align-items: center; /* center text vertically */
+}
+
+.inNav1 {
+  font-family: monospace;
+  flex-grow: 4;
+  background: firebrick;
+  /* flex: 0.25; */
+}
+.inNav2 {
+  flex-grow: 1;
+  background: #3498db;
+}
+.inNav3 {
+  flex-grow: 1;
+  background: #f77737;
+}
+.inNav4 {
+  background: #e74c3c;
+}
+
+.inNav1:hover {
+  cursor: default;
+}
+
+.inNav2:hover {
+  background: #3b5998;
+}
+
+.inNav3:hover {
+  background: #833ab4;
+}
+
+.flexBar ul {
+  display: flex;
+}
+
+/* .flexBar li {
+  flex-grow: 1;
+} */
+
+@media all and (max-width: 1000px) {
+  .flexBar ul {
+    flex-wrap: wrap;
+  }
+  .flexBar {
+    flex: 1 1 50%;
+  }
+  .flexBar .social {
+    flex: 1 1 25%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .flexBar li {
+    flex-basis: 100%;
+  }
+}
